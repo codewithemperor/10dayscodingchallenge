@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(BG.jpg);
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+}
+
+.countdown {
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #ffffffa4;
+    width: 50%;
+    padding: 40px 30px;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+@media (max-width: 991.98px)  {
+    .countdown {
+       display: block;
+       position: relative;
+       min-width: 80%;
+       min-height: 70vh;
+       border-radius: 20px;
+       backdrop-filter: blur(6px);
+    }
+}
+
+.countdown h2 {
+    font-size: 30px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+
+.timer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.time .value{
+    padding: 20px;
+    background-color: chocolate;
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 7px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+
+
+/* Tablet breakpoint */
+
+@media (max-width: 991.98px) and (min-width: 768px) {
+    .countdown {
+        padding: 100px 30px;
+     }
+
+     .countdown h2 {
+        margin: 20px 0 40px 0 ;
+     }
+
+     .time .value {
+        font-size: 60px
+    }
+}
+
+/* sm breakpoint */
+@media (max-width: 575.98px) { 
+    .countdown h2 {
+        margin-bottom: 40px ;
+     }
+
+    .timer {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .time {
+        width: 45%;
+    }
+    .time .value{
+        font-size: 30px;
+        padding: 15px 5px;
+    }
+ }
