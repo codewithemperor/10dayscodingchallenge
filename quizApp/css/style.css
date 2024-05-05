@@ -1,34 +1,12 @@
-@font-face {
-    font-family: Jersey25;
-    src: url(../fonts/Jersey25Charted-Regular.ttf) format('truetype');
-}
-
-@font-face {
-    font-family: BricolageGrotesque;
-    src: url(../fonts/BricolageGrotesque-VariableFont_opsz\,wdth\,wght.ttf) format('truetype');
-}
-
-@font-face {
-    font-family: Athiti;
-    src: url(../fonts/Athiti-Regular.ttf) format('truetype');
-    font-weight: 400;
-}
-
-@font-face {
-    font-family: Athiti;
-    src: url(../fonts/Athiti-Bold.ttf) format('truetype');
-    font-weight: 700;
-}
-
 :root {
     --pColor: #a2063e;
     --sColor: #3ea206;
     --tColor: #06a269;
     --fColor: #6906a2;
 
-    --font-primary: 'BricolageGrotesque', sans-serif;
+    --font-primary: 'Bricolage Grotesque', sans-serif;
     --font-secondary: 'Athiti', sans-serif;
-    --font-tertiary:  'Jersey25', sans-serif;
+    --font-tertiary: 'Jersey 25 Charted', sans-serif;
 
 }
 
