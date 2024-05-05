@@ -27,21 +27,58 @@ const cLogin = document.querySelector('.cLogin');
 const registration = document.querySelector('#registration');
 const formlogin = document.querySelector('#login');
 
-quizlink.addEventListener('click', (event) => {
+$(function() {
+  $(".quiz-link").click(function(event) {
     event.preventDefault();
-       
-    login.classList.add('show');
-    welcome__f.classList.add('translate');
-    welcome.classList.add('translate');
-
+    
+    $(".login").animate({ left: '-200' }, 300, function() {
+      $(this).addClass("show");
+    });
+    
+    $(".welcome__f, .welcome").addClass("translate");
+  });
 });
 
-cAccount.addEventListener('click', () => {
-  registration.classList.remove('d-none');
-  formlogin.classList.add('d-none');
+
+
+
+$(function() {
+  $(".cAccount").click(function() {
+    $("#login").hide("slide", { direction: "left" }, 1000, function() {
+      callback();
+    });
+    return false;
+  });
+
+  function callback() {
+    setTimeout(function() {
+      $("#registration").removeClass("d-none").show("slide", { direction: "right" }, 200);
+    }, 500);
+  }
 });
 
-cLogin.addEventListener('click', () => {
-  formlogin.classList.remove('d-none');
-  registration.classList.add('d-none');
+$(function() {
+  $(".cLogin").click(function() {
+    $("#registration").hide("slide", { direction: "right" }, 1000, function() {
+      callback();
+    });
+    return false;
+  });
+
+  function callback() {
+    setTimeout(function() {
+      $("#login").removeClass("d-none").show("slide", { direction: "left" }, 200);
+    }, 500);
+  }
 });
+
+
+// cAccount.addEventListener('click', () => {
+//   registration.classList.remove('d-none');
+//   formlogin.classList.add('d-none');
+// });
+
+// cLogin.addEventListener('click', () => {
+//   formlogin.classList.remove('d-none');
+//   registration.classList.add('d-none');
+// });
