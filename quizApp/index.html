@@ -5,18 +5,142 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>CW-QUIZ: </title>
 </head>
 <body class="d-flex justify-content-between align-items-center">
 
-    <div class="container-fluid d-flex p-0 w-100">
-        <div class="col-5">
-            <img src="img/undraw_questions_re_1fy7 (1).svg" alt="im">
+    <div class="container-fluid d-flex p-0 w-100 welcome">
+        <div class="col d-none d-lg-flex">
+            
         </div>
-        <div class="col bg-light"></div>
+        <div class="col-10 col-md-10 col-lg-7 welcome__f p-4 py-5 p-md-5 ">
+            <div class="row align-items-center">
+
+                <div class="col-md-7 ce">
+                    <p class="quiz-greetings m-0">Welcome to</p>
+                    <p class="quiz-title">CW Quiz</p>
+
+                    <p class="quiz-description mb-3 mb-md-2">CW Quiz is a thrilling quiz game with wide range of topics, from sports and entertainment to politics and education. Challenge your knowledge, compete with friends, and embark on an exciting journey of trivia fun!</p>
+                    <a href="#" class="quiz-link btn p-2 px-3">Test Your Knowledge Now</a>
+                </div>
+
+                <div class="how-to-play col py-3 px-2 ms-4 d-none d-md-block">
+                    <p>How to play</p>
+                    <ul>
+                        <li>Click on <strong>"Text Your Knowledge Now!"</strong> link </li>
+                        <li>Login to your account</li>
+                        <li>Choose your quiz field</li>
+                        <li>Answer each question to the best of your ability within the time limit.</li>
+                        <li>Choose the correct answer from the multiple-choice options provided.</li>
+                        <li>Click on the answer you believe is correct to proceed to the next question.</li>
+                    </ul>
+
+                </div>
+
+            </div>
+            
+        </div>
+
+        <div class="login col-10 col-md-7 col-lg-6 p-4 py-5 p-md-5 align-content-center justify-content-lg-start">
+            
+                <div class="col-lg-10 text-light d-flex align-content-center justify-content-center flex-column">
+
+                    <div id="login">
+                        
+                        <p class="login-greetings mb-2">Welcome Back!</p>
+                        <form class="row g-3 needs-validation" novalidate>
+                           
+                            <div class="col-12">
+                              <label for="loginUsername" class="form-label mb-1">Username</label>
+                              <div class="input-group has-validation">
+                                <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                <input type="text" class="form-control" id="loginUsername" aria-describedby="inputGroupPrepend" required>
+                                <div class="invalid-feedback">Please enter your username.</div>
+                              </div>
+                            </div>
+                            
+                            <div class="col-12">
+                              <label for="loginPassword" class="form-label mb-1">Password</label>
+                              <input type="password" class="form-control" id="loginPassword" required>
+                              <div class="invalid-feedback">Please enter your password</div>
+                            </div>
+                            
+                            <div class="col-12 ">
+                              <input class="btn w-100" type="submit" value="Login" name="login">
+                            </div>
+                          </form>
+                          <p class="text-center p-2 px-3 cAccount">You dont have an account yet? <strong>Create Account</strong></p>
+
+                    </div>
+
+                    <div id="registration" class="d-none">
+
+                        <p class="login-greetings mb-2">Welcome!</p>
+                        <form class="row g-3 needs-validation" id="registration" novalidate>
+                            <div class="col-6">
+                              <label for="validationCustom01" class="form-label mb-1">First name</label>
+                              <input type="text" class="form-control" id="validationCustom01" required>
+                              <div class="valid-feedback">
+                                Looks good!
+                              </div>
+                            </div>
+                            <div class="col-6">
+                              <label for="validationCustom02" class="form-label mb-1">Last name</label>
+                              <input type="text" class="form-control" id="validationCustom02" required>
+                              <div class="valid-feedback">
+                                Looks good!
+                              </div>
+                            </div>
+                            <div class="col-6">
+                              <label for="validationCustomUsername" class="form-label mb-1">Username</label>
+                              <div class="input-group has-validation">
+                                <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                                <div class="invalid-feedback">
+                                  Please choose a username.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-6">
+                                <label for="validationCustom03" class="form-label mb-1">Phone Number</label>
+                                <input type="number" class="form-control" id="validationCustom03" required>
+                                <div class="invalid-feedback">
+                                  Please enter your password
+                                </div>
+                              </div>
+                            <div class="col-6">
+                              <label for="validationCustom04" class="form-label mb-1">Password</label>
+                              <input type="password" class="form-control" id="validationCustom044" required>
+                              <div class="invalid-feedback">
+                                Please enter your password
+                              </div>
+                            </div>
+                            <div class="col-6">
+                                <label for="validationCustom05" class="form-label mb-1">Confirm Password</label>
+                                <input type="password" class="form-control" id="validationCustom05" required>
+                                <div class="invalid-feedback">
+                                  Please enter your password
+                                </div>
+                              </div>
+                            
+                            <div class="col-12 ">
+                              <input class="btn w-100" type="submit" value="Create Account" name="createAccount">
+                            </div>
+                        </form>
+                        <p class="text-center p-2 px-3 cLogin">Already a member? <strong>Login</strong></p>
+
+                    </div>
+
+                    
+                </div>
+
+            
+        </div>
     </div>
     
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
     <script src="js/sweetalert2@11.js"></script>
+
 </body>
 </html>
