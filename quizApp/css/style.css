@@ -191,6 +191,18 @@ nav {
     opacity: 0.8;
 }
 
+/* Main Content */
+.user_greeting {
+    font-weight: 600;
+    font-family: var(--font-primary);
+    font-style: italic;
+}
+
+dotlottie-player {
+    object-fit: cover;
+    width: 90%;
+    height: 90%;
+}
 
 
 /********************************/
