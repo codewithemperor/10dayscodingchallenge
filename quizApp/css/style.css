@@ -3,6 +3,8 @@
     --sColor: #3ea206;
     --tColor: #06a269;
     --fColor: #6906a2;
+    --white: #ffffff;
+    --black: #000000;
 
     --font-primary: 'Bricolage Grotesque', sans-serif;
     --font-secondary: 'Athiti', sans-serif;
@@ -16,13 +18,16 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
 body {
     width: 100%;
     overflow-x: hidden;
     font-family: var(--font-secondary);
-    background: linear-gradient(#ffffffb6, #3fa206cf), url("../img/bg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: var(--white);
     min-height: 100vh;
 }
 
@@ -30,7 +35,7 @@ body {
 .welcome__f {
     background-color: #ffffff;
     border-radius: 10px;
-    box-shadow: 0px 5px 20px #a2063fa4;
+    box-shadow: 0px 5px 20px #a2063f38;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
@@ -141,6 +146,53 @@ body {
     color: var(--tColor);
     text-decoration: underline;
 }
+
+/* Navbar */
+nav {
+    background-color: var(--pColor);
+    color: var(--white);
+}
+
+.toggler {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 120%;
+}
+
+.brand-name {
+    color: var(--white);
+    font-weight: 600;
+    font-size: 130%;
+}
+
+.navbar-nav {
+    flex-direction: row;
+}
+
+.nav-link {
+    color: var(--white) !important;
+}
+
+.nav-item .nav-link {
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+}
+
+.nav-item:hover .nav-link {
+    transform: scale(1.2);
+    padding: 5px;
+    font-weight: 500;
+}
+
+.nav-item:not(:hover) .nav-link {
+    opacity: 0.8;
+}
+
+
+
 /********************************/
 /******** RESPONSIVENESS ********/
 /********************************/
